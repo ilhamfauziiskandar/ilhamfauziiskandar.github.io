@@ -292,7 +292,7 @@
             <a href="https://github.com/ilhamfauziiskandar" class="footer__icon"><i class='bx bxl-github'></i></a>
             <a href="#" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
         </div>
-        <p>&#169; <?= $year; ?> copyright all right reserved</p>
+        <p>&#169; <p id="year"></p> copyright all right reserved</p>
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -300,6 +300,8 @@
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
+        var d = new Date();
+        document.getElementById("year").innerHTML = d.getFullYear();
     </script>
 </body>
 
