@@ -1,9 +1,4 @@
-<?php
-$tgl = date('d M Y');
 
-$year = date('Y');
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -274,13 +269,12 @@ $year = date('Y');
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form method="POST" action="proses.php" class="contact__form">
+                <form method="POST" action="" class="contact__form">
                     <span class="pesan pesan-nama">Harap isi nama anda</span>
                     <input type="text" name="nama" id="nama" placeholder="Name" class="contact__input">
 
                     <span class="pesan pesan-email">Harap isi email nama anda</span>
                     <input type="mail" name="email" id="email" placeholder="Email" class="contact__input">
-                    <input type="text" name="tgl" value="<?= $tgl; ?>" hidden>
 
                     <span class="pesan pesan-isi">Harap isi text anda</span>
                     <textarea name="isi" id="isi" cols="0" rows="10" class="contact__input"></textarea>
@@ -306,59 +300,6 @@ $year = date('Y');
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
-        $(document).ready(function() {
-            $('.contact__form').submit(function() {
-
-                var nama = $('#nama').val().length;
-                var email = $('#email').val().length;
-                var isi = $('#isi').val().length;
-
-                var hitung = nama + email + isi;
-
-                if (hitung < 3) {
-                    if (nama == 0) {
-                        $(".pesan-nama").css('display', 'block');
-                    } else {
-                        $(".pesan-nama").css('display', 'none');
-                    }
-                    if (email == 0) {
-                        $(".pesan-email").css('display', 'block');
-                    } else {
-                        $(".pesan-email").css('display', 'none');
-                    }
-                    if (isi == 0) {
-                        $(".pesan-isi").css('display', 'block');
-                    } else {
-                        $(".pesan-isi").css('display', 'none');
-                    }
-                    return false;
-                } else {
-                    $.ajax({
-                        type: "post",
-                        url: $(this).attr('action'),
-                        data: $(this).serialize(),
-                        dataType: "json",
-
-                        beforeSend: function() {
-                            $('.btnsimpan').attr('disable', 'disabled');
-                            $('.btnsimpan').html('<i class="bx bx-loader-circle"></i>');
-                        },
-                        complete: function() {
-                            $('.btnsimpan').removeAttr('disable');
-                            $('.btnsimpan').html('Submit');
-                        },
-                        success: function(response) {
-                            Swal.fire({
-                                icon: 'success',
-                                title: 'Data telah terkirim',
-                                text: response.sukses
-                            })
-
-                        }
-                    });
-                }
-            })
-        })
     </script>
 </body>
 
