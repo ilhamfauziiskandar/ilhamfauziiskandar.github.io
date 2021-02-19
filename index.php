@@ -1,0 +1,365 @@
+<?php
+$tgl = date('d M Y');
+
+$year = date('Y');
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ilham Fauzi Iskandar</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">ILHAM</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title"><br><span class="home__title-color">HEYY!</span> saya<br>Junior Design <br> Graphic, dan<br> Web Develop</h1>
+
+                <a href="#contact" class="button">Contact</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/ilhamfauziiskandar" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.behance.net/ilhamfauziiskandar" class="home__social-icon"><i class='bx bxl-behance'></i></a>
+                <a href="https://github.com/ilhamfauziiskandar" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="home__img">
+                <img src="assets/img/perfil.png" alt="">
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">Saya Ilham Fauzi Iskandar</h2>
+                    <p class="about__text">Saya seorang yang antusias, termotivasi diri, dapat diandalkan, bertanggung jawab dan pekerja keras. Saya seorang pekerja tim yang matang dan dapat mengikuti semua situasi yang menantang. Saya dapat bekerja dengan baik dalam lingkungan tim maupun menggunakan inisiatif sendiri. saya bisa bekerja dengan baik di bawah tekanan dan mematuhi tenggat waktu yang ketat.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-code skills__icon'></i>
+                            <span class="skills__name">CodeIgniter 4</span>
+                        </div>
+                        <div class="skills__bar skills__codeigniter">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">78%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">Javascript</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">60%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-nodejs skills__icon'></i>
+                            <span class="skills__nodejs">NodeJS</span>
+                        </div>
+                        <div class="skills__bar skills__nodejs">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">35%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-adobe skills__icon'></i>
+                            <span class="skills__name">Adobe Photoshop</span>
+                        </div>
+                        <div class="skills__bar skills__photoshop">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">88%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-code skills__icon'></i>
+                            <span class="skills__name">Laravel</span>
+                        </div>
+                        <div class="skills__bar skills__laravel">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">35%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-paint skills__icon'></i>
+                            <span class="skills__name">UI</span>
+                        </div>
+                        <div class="skills__bar skills__ux">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">75%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-data skills__icon'></i>
+                            <span class="skills__">Mysql</span>
+                        </div>
+                        <div class="skills__bar skills__mysql">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-adobe skills__icon'></i>
+                            <span class="skills__name">Adobe Ilustrator</span>
+                        </div>
+                        <div class="skills__bar skills__ilustrator">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">83%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+
+            <br>
+            <h3 class="section-subtitle">Aplikasi</h3>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs- skills__icon'></i>
+                            <span class="skills__">Harga Pokok Penjualan Perusahaan Dagang</span>
+                        </div>
+                        <div>
+                            <span class="skills__percentage">CI4</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs- skills__icon'></i>
+                            <span class="skills__">SPK Pemilihan Tanaman</span>
+                        </div>
+                        <div>
+                            <span class="skills__percentage">CI4</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs- skills__icon'></i>
+                            <span class="skills__">Penggajihan Penjahit</span>
+                        </div>
+                        <div>
+                            <span class="skills__percentage">CI4</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs- skills__icon'></i>
+                            <span class="skills__">Koperasi</span>
+                        </div>
+                        <div>
+                            <span class="skills__percentage">MVC</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs- skills__icon'></i>
+                            <span class="skills__">Gizi Makanan</span>
+                        </div>
+                        <div>
+                            <span class="skills__percentage">CI3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <h3 class="section-subtitle">Design</h3>
+
+            <div class="work__container bd-grid">
+                <div class="work__img">
+                    <img src="assets/img/work1.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/work2.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/work3.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/work4.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/work5.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/work6.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form method="POST" action="proses.php" class="contact__form">
+                    <span class="pesan pesan-nama">Harap isi nama anda</span>
+                    <input type="text" name="nama" id="nama" placeholder="Name" class="contact__input">
+
+                    <span class="pesan pesan-email">Harap isi email nama anda</span>
+                    <input type="mail" name="email" id="email" placeholder="Email" class="contact__input">
+                    <input type="text" name="tgl" value="<?= $tgl; ?>" hidden>
+
+                    <span class="pesan pesan-isi">Harap isi text anda</span>
+                    <textarea name="isi" id="isi" cols="0" rows="10" class="contact__input"></textarea>
+                    <button type="submit" value="simpan" class="contact__button button btnsimpan">Submit</button>
+                </form>
+            </div>
+
+            </div>
+        </section>
+    </main>
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="footer__social">
+            <a href="https://www.behance.net/ilhamfauziiskandar" class="footer__icon"><i class='bx bxl-behance'></i></a>
+            <a href="https://github.com/ilhamfauziiskandar" class="footer__icon"><i class='bx bxl-github'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <p>&#169; <?= $year; ?> copyright all right reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        $(document).ready(function() {
+            $('.contact__form').submit(function() {
+
+                var nama = $('#nama').val().length;
+                var email = $('#email').val().length;
+                var isi = $('#isi').val().length;
+
+                var hitung = nama + email + isi;
+
+                if (hitung < 3) {
+                    if (nama == 0) {
+                        $(".pesan-nama").css('display', 'block');
+                    } else {
+                        $(".pesan-nama").css('display', 'none');
+                    }
+                    if (email == 0) {
+                        $(".pesan-email").css('display', 'block');
+                    } else {
+                        $(".pesan-email").css('display', 'none');
+                    }
+                    if (isi == 0) {
+                        $(".pesan-isi").css('display', 'block');
+                    } else {
+                        $(".pesan-isi").css('display', 'none');
+                    }
+                    return false;
+                } else {
+                    $.ajax({
+                        type: "post",
+                        url: $(this).attr('action'),
+                        data: $(this).serialize(),
+                        dataType: "json",
+
+                        beforeSend: function() {
+                            $('.btnsimpan').attr('disable', 'disabled');
+                            $('.btnsimpan').html('<i class="bx bx-loader-circle"></i>');
+                        },
+                        complete: function() {
+                            $('.btnsimpan').removeAttr('disable');
+                            $('.btnsimpan').html('Submit');
+                        },
+                        success: function(response) {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Data telah terkirim',
+                                text: response.sukses
+                            })
+
+                        }
+                    });
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
