@@ -9,6 +9,7 @@
 
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Ilham Fauzi Iskandar</title>
 </head>
 
@@ -17,7 +18,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">ILHAM</a>
+                <a href="#home" class="nav__logo">ILHAM</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
@@ -38,7 +39,7 @@
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title"><br><span class="home__title-color">HEYY!</span> saya<br>Junior Design <br> Graphic, dan<br> Web Develop</h1>
+                <h1 class="home__title"><br><span class="home__title-color">HEYY!!</span> Saya<br>Junior Graphic <br> Design, dan<br> Web Develop</h1>
 
                 <a href="#contact" class="button">Contact</a>
             </div>
@@ -236,6 +237,18 @@
                             <span class="skills__percentage">CI3</span>
                         </div>
                     </div>
+
+                    
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs- skills__icon'></i>
+                            <span class="skills__">Penggajihan Penjahit</span>
+                        </div>
+                        <div>
+                            <span class="skills__percentage">Laravel</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -268,7 +281,7 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form method="POST" action="" class="contact__form">
+                <form method="POST" action="proses.php" class="contact__form">
                     <span class="pesan pesan-nama">Harap isi nama anda</span>
                     <input type="text" name="nama" id="nama" placeholder="Name" class="contact__input">
 
@@ -277,11 +290,11 @@
 
                     <span class="pesan pesan-isi">Harap isi text anda</span>
                     <textarea name="isi" id="isi" cols="0" rows="10" class="contact__input"></textarea>
-                    <button type="submit" value="simpan" class="contact__button button btnsimpan">Submit</button>
+       
+                    <button type="submit" onclick="tambah()" value="simpan" class="contact__button button btnsimpan">Submit</button>
                 </form>
             </div>
 
-            </div>
         </section>
     </main>
     <!--===== FOOTER =====-->
@@ -293,14 +306,23 @@
         </div>
         <p>&#169; <a id="year"></a> copyright all right reserved</p>
     </footer>
-
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/main.js"></script>
-<!--     <script src="assets/js/jquery-3.5.1.min.js"></script> -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
         var d = new Date();
         document.getElementById("year").innerHTML = d.getFullYear();
+
+        $.ajax({
+        url : 'json/pesan.json',
+        dataType : 'json',
+        success: function (data) {
+            console.log(data);
+        },
+        error: function (xhr, status, msg) {
+            alert('Status: ' + status + "\n" + msg);
+        }
+        });
     </script>
 </body>
 
